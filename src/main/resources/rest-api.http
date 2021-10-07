@@ -1,19 +1,19 @@
+#
+#Приложение имитирует работу API физического лица банка:
+#
+#1. Выпуск новой карты по счету
+#2. Просмотр списка карт клиента
+#3. Просмотр списка карт по счету
+#4. Проверка баланса счета
+#
+#Примеры запросов
+#
 
-Приложение имитирует работу API физического лица банка:
-
-1. Выпуск новой карты по счету
-2. Просмотр списка карт клиента
-3. Просмотр списка карт по счету
-4. Проверка баланса счета
-
-В проекте используется inmemmory H2 база данных.
-
-
-Примеры запросов
 
 //Accounts
 
 // Баланс счета
+###
 GET http://localhost:8080/rest/v1/accounts/1/balance
 Accept: application/json
 ###
@@ -32,7 +32,7 @@ PUT http://localhost:8080/rest/v1/accounts/5
 Content-Type: application/json
 
 {
-"amount": 50000
+  "amount": 50000
 }
 ###
 
@@ -41,7 +41,7 @@ PUT http://localhost:8080/rest/v1/accounts/55
 Content-Type: application/json
 
 {
-"amount": 25000
+  "amount": 25000
 }
 ###
 
@@ -73,9 +73,5 @@ Content-Type: application/json
 POST http://localhost:8080/rest/v1/accounts/100/cards
 Content-Type: application/json
 
-11111
-
-
-
 {}
-#### bank-system-api
+###
